@@ -69,6 +69,7 @@ body{
     font-size: var(--button-font-size);
     padding: var(--base-space);
     border-radius: var(--size-border-radius);
+    color: var(--color-white);
 }
 
 .blue{
@@ -80,10 +81,28 @@ body{
 .pink{
     background-color: var(--color-pink);
 }
+
 /* Itmes */
 .items{
     width: 70%;
     height: 70vh;
+    padding-top: var(--base-space);
     padding-left: 0;
     background-color: var(--color-white);
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding-left: var(--base-space);
+    margin-bottom: var(--base-space);
+}
+
+.item__thumbnail{
+    width: var(--size-thumnail);
+    height: var(--size-thumnail);
+}
+
+.item__desc{
+    margin-left: var(--base-space);
 }

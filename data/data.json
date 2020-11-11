@@ -1,0 +1,33 @@
+{
+    "items" : [
+    {
+        "type" : "tshirt",
+        "gender" : "female",
+        "size" : "small",
+        "color" : "yellow",
+        "image" : "../image/yellow_t.png"
+    },
+
+    {
+        "type" : "pants",
+        "gender" : "female",
+        "size" : "large",
+        "color" : "blue",
+        "image" : "../image/yblue_p.png"
+    },
+    {
+        "type" : "skrit",
+        "gender" : "male",
+        "size" : "medium",
+        "color" : "pink",
+        "image" : "../image/pink_s.png"
+    },
+    {
+        "type" : "tshirt",
+        "gender" : "male",
+        "size" : "large",
+        "color" : "blue",
+        "image" : "../image/blue_t.png"
+    }
+    ]
+}
