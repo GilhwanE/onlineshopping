@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --base-space: 8px;
+  --size-button : 60px;
+  --size-border-radius: 4px;
+  --size-thumnail: 50px;
+  --button-font-size : 18px;
+
+  /* animation */
+  --animation-duration:300ms;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-black);
+}
