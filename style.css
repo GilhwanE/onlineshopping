@@ -4,7 +4,7 @@
 
 :root{
     /* color */
-  --color-black: #3f454d;
+  --color-black: #4d4d4d;
   --color-white: #ffffff;
   --color-blue: #3b88c3;
   --color-yellow: #fbbe28;
@@ -14,13 +14,19 @@
   /* size */
   --base-space: 8px;
   --size-button : 60px;
+  --size-logo : 120px;
   --size-border-radius: 4px;
   --size-thumnail: 50px;
   --button-font-size : 18px;
 
   /* animation */
   --animation-duration:300ms;
+}
 
+ul,li,button{
+    outline-style: none;
+    border: none;
+    list-style: none;
 }
 
 body{
@@ -30,4 +36,54 @@ body{
     align-items: center;
     height: 100vh;
     background-color: var(--color-black);
+}
+/* Logo */
+.logo{
+    width:var(--size-logo);
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: var(--base-space);
+}
+
+/* Buttons */
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: var(--base-space);
+}
+
+.logo:hover,
+.btn:hover{
+    transform: scale(1.2);
+}
+.imgBtn{
+    width: var(--size-button);
+    height: var(--size-button);
+}
+.colorBtn{
+    font-size: var(--button-font-size);
+    padding: var(--base-space);
+    border-radius: var(--size-border-radius);
+}
+
+.blue{
+    background-color: var(--color-blue);
+}
+.yellow{
+    background-color: var(--color-yellow);
+}
+.pink{
+    background-color: var(--color-pink);
+}
+/* Itmes */
+.items{
+    width: 70%;
+    height: 70vh;
+    padding-left: 0;
+    background-color: var(--color-white);
 }
