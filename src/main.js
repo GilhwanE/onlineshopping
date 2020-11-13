@@ -34,7 +34,7 @@ function onButtonClick(event, items) {
         return;
     }
     
-    const filterd = items.filter(item => item[key] === value);
+    const filterd = items.filter(item => item[key] === value); //filter함수 item담긴key값과 value값이 일치하는것 추출
     displayitems(filterd);
 }
 
@@ -51,4 +51,4 @@ loadItems()
     setEventListners(items);
     displayitems(items); //화면에 보여주기 위한 함수
 })
-.catch(console.log('g'));
+.catch(console.log);
