@@ -8,14 +8,12 @@ return fetch('data/data.json') //data.json경로설정
      .then(json => json.items);  //json안에 담긴 items 리턴
     }
 
+// json에 담긴 내용들 화면에 보여주도록하기
 function displayitems(items) {
     const itemlist = document.querySelector('.items');
     itemlist.innerHTML = items.map(item => createHTMLString(item)).join("");
-    console.log(itemlist);
 }
-
-//li태그를 긁어와서 ul태그 밑으로 자동적으로 data가 추가되도록하는것
-
+//html list 태그 생성 ,data에 담긴 내용을 가져온다.
 function createHTMLString(item){
     return `
     <li class="item">
@@ -26,23 +24,31 @@ function createHTMLString(item){
     ;
 }
 
-//해당물품을 클릭했을때 해당물품에 대한 데이터들이 보여지도록 (필터링기능)
+//필터링함수
+function onButtonClick(event, items) {
+    const dataset = event.target.dataset;
+    const key = dataset.key;
+    const value = dataset.value;
 
-function setEventListners(items){
-const logo = document.querySelector('.logo');
-const buttons = document.querySelector('.buttons');
-logo.addEventListener('click', () => { })
-buttons.addEventListener('click' , (e) =>{} 
-
-)
+    if ( key == null || value == null) {
+        return;
+    }
+    
+    const filterd = items.filter(item => item[key] === value);
+    displayitems(filterd);
 }
 
-//json파일가져온거 view로 뿌려주기 Promise then catch 이용
+function setEventListners(items){
+    const logo = document.querySelector('.logo');
+    const buttons = document.querySelector('.buttons');
+    logo.addEventListener('click', () => displayitems(items));
+    buttons.addEventListener('click', (event) => onButtonClick(event,items));
+}
+
+//json파일가져온거 view로 려주기 Promise then catch 이용
 loadItems()
 .then(items=> {
-    console.log(items);
-    // setEventListners(item);
+    setEventListners(items);
     displayitems(items); //화면에 보여주기 위한 함수
-    
 })
 .catch(console.log('g'));
