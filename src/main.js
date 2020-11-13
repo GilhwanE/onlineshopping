@@ -8,21 +8,22 @@ return fetch('data/data.json') //data.json경로설정
      .then(json => json.items);  //json안에 담긴 items 리턴
     }
 
-function displayitems() {
+function displayitems(items) {
     const itemlist = document.querySelector('.items');
-    
+    itemlist.innerHTML = items.map(item => createHTMLString(item)).join("");
     console.log(itemlist);
 }
 
 //li태그를 긁어와서 ul태그 밑으로 자동적으로 data가 추가되도록하는것
 
 function createHTMLString(item){
-    
-    `<li class="item">
+    return `
+    <li class="item">
     <img src="${item.image}" alt="${item.type}" class="item__thumbnail">
     <span class="item__desc">${item.size}, ${item.gender}</span>
     </li>
-    `;
+    `
+    ;
 }
 
 //해당물품을 클릭했을때 해당물품에 대한 데이터들이 보여지도록 (필터링기능)
@@ -40,7 +41,7 @@ buttons.addEventListener('click' , (e) =>{}
 loadItems()
 .then(items=> {
     console.log(items);
-    displayitems(); //화면에 보여주기 위한 함수
+    displayitems(items); //화면에 보여주기 위한 함수
     
 })
 .catch(console.log('g'));

@@ -13,7 +13,7 @@
         "gender" : "female",
         "size" : "large",
         "color" : "blue",
-        "image" : "../image/yblue_p.png"
+        "image" : "../image/blue_p.png"
     },
     {
         "type" : "skrit",
