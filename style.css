@@ -89,6 +89,8 @@ body{
     padding-top: var(--base-space);
     padding-left: 0;
     background-color: var(--color-white);
+    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 .item{

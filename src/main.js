@@ -28,7 +28,7 @@ function createHTMLString(item){
 
 //해당물품을 클릭했을때 해당물품에 대한 데이터들이 보여지도록 (필터링기능)
 
-function setEventListners(item){
+function setEventListners(items){
 const logo = document.querySelector('.logo');
 const buttons = document.querySelector('.buttons');
 logo.addEventListener('click', () => { })
@@ -41,6 +41,7 @@ buttons.addEventListener('click' , (e) =>{}
 loadItems()
 .then(items=> {
     console.log(items);
+    // setEventListners(item);
     displayitems(items); //화면에 보여주기 위한 함수
     
 })
