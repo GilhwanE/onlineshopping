@@ -5,6 +5,8 @@ HTML CSS JS JSON
 
 URL : https://gilhwane.github.io/onlineshopping/
 
+<hr>
+
 ### page view
 ![mainview](https://user-images.githubusercontent.com/63918911/99047865-2d69bc80-25d8-11eb-9c6d-c2b7b7c8d8ae.PNG)
 
@@ -12,8 +14,6 @@ URL : https://gilhwane.github.io/onlineshopping/
 ![filter](https://user-images.githubusercontent.com/63918911/99047870-2e9ae980-25d8-11eb-8f9c-4f0fa8a024bb.PNG)
 
 
-<!-- 
-image
 ![pink_t](https://user-images.githubusercontent.com/63918911/99049101-ca792500-25d9-11eb-8b2d-343df09a6bcd.png)
 ![yellow_p](https://user-images.githubusercontent.com/63918911/99049102-cb11bb80-25d9-11eb-9a37-351dcfa21e04.png)
 ![yellow_s](https://user-images.githubusercontent.com/63918911/99049104-cbaa5200-25d9-11eb-97ed-e84a25c8a617.png)
@@ -24,5 +24,3 @@ image
 ![logo](https://user-images.githubusercontent.com/63918911/99049113-ccdb7f00-25d9-11eb-8700-ea04f4d766bc.png)
 ![pink_p](https://user-images.githubusercontent.com/63918911/99049115-cd741580-25d9-11eb-95aa-6a2e66e05171.png)
 ![pink_s](https://user-images.githubusercontent.com/63918911/99049117-cd741580-25d9-11eb-9e06-1352f5feeed3.png)
-
-!-->
