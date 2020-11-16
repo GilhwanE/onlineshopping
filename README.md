@@ -5,6 +5,8 @@ HTML CSS JS JSON
 
 URL : https://gilhwane.github.io/onlineshopping/
 
+<hr>
+
 ### page view
 ![mainview](https://user-images.githubusercontent.com/63918911/99047865-2d69bc80-25d8-11eb-9c6d-c2b7b7c8d8ae.PNG)
 
