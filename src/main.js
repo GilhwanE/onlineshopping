@@ -6,13 +6,14 @@ function loadItems(){
 return fetch('data/data.json') //data.json경로설정
      .then(response => response.json()) //성공하면 json가져옴
      .then(json => json.items);  //json안에 담긴 items 리턴
-    }
+}
 
 // json에 담긴 내용들 화면에 보여주도록하기
 function displayitems(items) {
     const itemlist = document.querySelector('.items');
     itemlist.innerHTML = items.map(item => createHTMLString(item)).join("");
 }
+
 //html list 태그 생성 ,data에 담긴 내용을 가져온다.
 function createHTMLString(item){
     return `
@@ -24,7 +25,7 @@ function createHTMLString(item){
     ;
 }
 
-//필터링함수
+//필터링함수 When user is Button Click that item data same value data 
 function onButtonClick(event, items) {
     const dataset = event.target.dataset;
     const key = dataset.key;
@@ -33,11 +34,11 @@ function onButtonClick(event, items) {
     if ( key == null || value == null) {
         return;
     }
-    
     const filterd = items.filter(item => item[key] === value); //filter함수 item담긴key값과 value값이 일치하는것 추출
     displayitems(filterd);
 }
 
+//dom 설정
 function setEventListners(items){
     const logo = document.querySelector('.logo');
     const buttons = document.querySelector('.buttons');
